@@ -66,7 +66,7 @@ Specialties, as described on page 117 of the core rules book, are supported. If 
 ### Verbose Output
 By default, Weaponmark will test the weapon over one million turns and display the average hits and damage scored per use and per turn. The Verbose parameter `-v` adds information about misses to these results. To see the percentage of time the weapon misses, botches, or hits but does no damage, include `-v` on the command line.
 ### MegaTurns
-if you are not satisfied with one million turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of iterations (in millions) that the benchmark should run.  For example, to run ten million turns, include `-t10` on the command line.
+if you are not satisfied with one million turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of turns (in millions) that the benchmark should run.  For example, to run ten million turns, include `-t10` on the command line.
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](http://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.md) file for details
 

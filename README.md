@@ -1,4 +1,5 @@
 ![Weaponmark](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/weaponmark.png)
+
 How much damages does your weapon dish out?
 A command line utility to compare weapon effeciency for the game: **Mage The Ascension (WW4600)**
 

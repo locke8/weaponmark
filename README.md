@@ -47,7 +47,7 @@ Type `weaponmark --examples [Enter]` or `weaponmark -e [Enter]` to show some exa
 Type `weaponmark --interactive [Enter]` or `weaponmark -i [Enter]` to receive prompts for all needed input:
 
 ![Interactive-mode Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/interactive.png)
-Interactive mode displays**** what the command line would look like using the input you provided
+Interactive mode displays what the command line would look like using the input you provided
 
 #### Help
 Type `weaponmark [Enter]` or `weaponmark --help [Enter]` to view usage instructions and options:

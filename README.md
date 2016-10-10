@@ -5,7 +5,7 @@ A command line utility to compare weapon effeciency for the game: **Mage The Asc
 
 Works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.
 ## Quick Example:
-A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit dice. He has 4 strength, this becomes his damage dice. She is capable of one action per turn and wants to do as much damage as possible so elects to split her action into three actions with penalties. Here is what that looks like:
+A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She has 4 strength, this becomes her damage dice. She is capable of one action per turn and wants to do as much damage as possible so elects to split the action into three actions with penalties. Here is what that looks like:
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch.png)
 

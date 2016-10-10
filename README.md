@@ -9,7 +9,7 @@ A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit di
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch.png)
 
-To include miss statistic, she could include a -v ("Verbose") parameter, like this:
+To include miss statistics, she could include a -v ("Verbose") parameter, like this:
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch_v.png)
 ##Motivation

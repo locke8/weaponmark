@@ -33,10 +33,10 @@ Installation consists of downloading the program and unzipping it to a folder on
 > Click on the Start menu and type: ```cmd.exe [Enter]```
 
 2. Switch to the program directory:
-> type: `cd \Program Files\Weaponnmark [Enter]`
+> Type: `cd \Program Files\Weaponnmark [Enter]`
 
 3. Run the program, type:
-> `weaponmark -i [Enter]`
+> Type: `weaponmark -i [Enter]`
 
 #### Examples
 ##### Usage Examples

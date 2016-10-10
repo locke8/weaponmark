@@ -20,12 +20,15 @@ Installation consists of downloading the program and unzipping it to a folder on
 
 **Step 1:** Install Java JRE 8 if not already installed on your computer:
 > Download page: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+> 
 > Detailed instructions: https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jre_install.html#CHDEDHAJ
 
 **Step 2:** Download the utility and unzip it to a folder on your computer:
 > Download [this](https://github.com/locke8/weaponmark/releases/download/v1.0a/weaponmark_1.0a.zip) zip file
-> Create a folder in "C:\Program Files" called "Weaponmark"
-> Unzip the downloaded file into C:\Program Files\Weaponmark
+> 
+> Create a folder in `C:\Program Files` called `Weaponmark`
+> 
+> Unzip the downloaded file into `C:\Program Files\Weaponmark`
 
 ### Usage
 1. Start a command prompt:

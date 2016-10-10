@@ -1,4 +1,5 @@
 ![Weaponmark](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/weaponmark.png)
+
 *How much damage does your weapon dish out?*
 _ _ _
 A command line utility to compare weapon effeciencies for the game: **Mage The Ascension (WW4600)**. Works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.

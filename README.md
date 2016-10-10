@@ -68,7 +68,7 @@ By default, Weaponmark will test the weapon over one million turns and display t
 ### MegaTurns
 if you are not satisfied with one million turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of turns (in millions) that the benchmark should run.  For example, to run ten million turns, include `-t10` on the command line.
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](http://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.txt](https://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.txt) file for details
 
 ## Acknowledgements
 Special thanks to the creators of [Scallop](https://github.com/scallop/scallop), [sbt-BuildInfo](https://github.com/sbt/sbt-buildinfo), [JCDP](https://github.com/dialex/JCDP), [sbt-assembly](https://github.com/sbt/sbt-assembly), and [ScalaTest](http://www.scalatest.org/) without which Weaponmark would not exist.

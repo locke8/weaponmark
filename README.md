@@ -64,7 +64,7 @@ If you would like to see how your weapon will perform against opponents who can 
 ### Specialties
 Specialties, as described on page 117 of the core rules book, are supported. If you are specialized in the use of your weapon, every 10 you roll to hit yields a bonus roll. Additional rolls of 10 extend this effect. Rolling a 1 on the bonus roll cancels out the 10. Include the `-l` parameter to denote specialization with a weapon.
 ### Verbose Output
-By default, Weaponmark will test the weapon over one million turns and display the average hits and damage scored per use and per turn. The Verbose parameter `-v` adds information about misses to these results. To see the percentage of time the weapon misses, botches, or hits but does not damage, include `-v` on the command line.
+By default, Weaponmark will test the weapon over one million turns and display the average hits and damage scored per use and per turn. The Verbose parameter `-v` adds information about misses to these results. To see the percentage of time the weapon misses, botches, or hits but does no damage, include `-v` on the command line.
 ### MegaTurns
 if you are not satisfied with one million turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of iterations (in millions) that the benchmark should run.  For example, to run ten million turns, include `-t10` on the command line.
 ## License

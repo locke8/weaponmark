@@ -12,7 +12,7 @@ To include miss statistics, she could include a -v ("Verbose") parameter, like t
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch_v.png)
 ##Motivation
-The purpose of this utility is to aid in play balancing the game. If you have played *Mage: The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system. Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
+The purpose of this utility is to aid in play balancing the game. If you have played *Mage The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system. Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
 ## Getting Started
 ### Installation
 #### Windows

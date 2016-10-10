@@ -58,7 +58,7 @@ Type `weaponmark [Enter]` or `weaponmark --help [Enter]` to view usage instructi
 ### Actions
 Use the `-a<#>` parameter to specify the number of actions per turn. The default value is 1. For example, a character with Time Dilation(1) would gain a free action every turn and therefore warrant a `-a2` parameter on the command line.
 ### Split Action
-You can specify that the turn include a split action with `-s`. A split action allows for 2 or 3 usages of the weapon during a single action. This split-action sufferes from dice mod penalties. By default, these penalties are -2, -3, -4 for usage 1, 2, and (optionally) 3 in a split-action. These penalties are subtracted from the Hit Dice when performing a split-action. The penalty values can be overriden with the `-x<#>`, `-y<#>`, and `-z<#>` parameters.
+You can specify that the turn include a split action with `-s<#>`. A split action allows for 2 or 3 usages of the weapon during a single action. These split actions suffer from dice mod penalties. By default, these penalties are -2, -3, -4 for usage 1, 2, and (optionally) 3 in a split-action. These penalties are subtracted from the Hit Dice when performing the split-action. The penalty values can be overriden with the `-x<#>`, `-y<#>`, and `-z<#>` parameters.
 ### Soak Dice
 If you would like to see how your weapon will perform against opponents who can soak damage, usge the `-k<#>` parameter. For example, if you want to test your weapon effectiveness against an opponent with three soak dice, include `-k3` on the command line.
 ### Specialties
@@ -68,7 +68,7 @@ By default, Weaponmark will test the weapon over one million turns and display t
 ### MegaTurns
 if you are not satisfied with one million turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of turns (in millions) that the benchmark should run.  For example, to run ten million turns, include `-t10` on the command line.
 ## License
-This project is licensed under the MIT License - see the [LICENSE.txt](https://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.txt) file for details
+This project is licensed under the MIT License - see the [LICENSE.txt](https://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.txt) file for details.
 
 ## Acknowledgements
 Special thanks to the creators of [Scallop](https://github.com/scallop/scallop), [sbt-BuildInfo](https://github.com/sbt/sbt-buildinfo), [JCDP](https://github.com/dialex/JCDP), [sbt-assembly](https://github.com/sbt/sbt-assembly), and [ScalaTest](http://www.scalatest.org/) without which Weaponmark would not exist.

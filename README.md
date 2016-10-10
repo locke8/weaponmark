@@ -73,4 +73,5 @@ This project is licensed under the MIT License - see the [LICENSE.txt](https://r
 ## Acknowledgements
 Special thanks to the creators of [Scallop](https://github.com/scallop/scallop), [sbt-BuildInfo](https://github.com/sbt/sbt-buildinfo), [JCDP](https://github.com/dialex/JCDP), [sbt-assembly](https://github.com/sbt/sbt-assembly), and [ScalaTest](http://www.scalatest.org/) without which Weaponmark would not exist.
 
-Eternal gratitude to [Martin Ordersky](https://en.wikipedia.org/wiki/Martin_Odersky) and the folks at [Lightbend](http://www.lightbend.com/): [Functional Programming](https://www.coursera.org/learn/progfun1), [Actor-based Systems](http://akka.io/), [The Reactive Manifesto](http://www.reactivemanifesto.org/) - Not since Smalltalk have I enjoyed development this much - I am forever in your debt.
+Eternal gratitude to [Martin Ordersky](https://en.wikipedia.org/wiki/Martin_Odersky) and the folks at [Lightbend](http://www.lightbend.com/).
+[Functional Programming](https://www.coursera.org/learn/progfun1), [Actor-based Systems](http://akka.io/), [The Reactive Manifesto](http://www.reactivemanifesto.org/): not since Smalltalk have I enjoyed development this much - I am forever in your debt.

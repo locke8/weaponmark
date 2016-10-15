@@ -2,7 +2,7 @@
 
 *How much damage does your weapon dish out?*
 _ _ _
-Weaponmark is a command line utility to compare weapon effeciencies for the game: **Mage The Ascension (WW4600 - Revised Edition)**. Works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.
+Weaponmark is a command line utility to compare weapon effeciencies for the game: **Mage The Ascension (WW4600 - Revised Edition)**. It  works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.
 ## Quick Example:
 A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She has 4 strength, this becomes her damage dice. She is capable of one action per turn and wants to do as much damage as possible so elects to split the action into three actions with penalties. Here is what that looks like:
 

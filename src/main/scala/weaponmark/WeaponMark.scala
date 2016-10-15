@@ -1,9 +1,5 @@
 package weaponmark
 
-/**
-  * Created by Paul on 9/24/2016.
-  */
-
 import com.diogonunes.jcdp.color.ColoredPrinter
 import com.diogonunes.jcdp.color.api.Ansi.{Attribute, BColor, FColor}
 import org.rogach.scallop._
@@ -28,7 +24,7 @@ object WeaponMark  extends App {
     .foreground(FColor.WHITE).background(BColor.BLACK)
     .build()
 
-  private def configure(options : Seq[String]) = {
+  private def configure(options: Seq[String]) = {
     overrideColorOutput.value = Option(false)
     new ScallopConf(options) {
       helpWidth(100)
@@ -84,7 +80,7 @@ object WeaponMark  extends App {
     }
   }
 
-  private def printExamples() : Unit = {
+  private def printExamples() = {
     val cmdColor = FColor.YELLOW
     val descColor = FColor.CYAN
 
@@ -242,12 +238,12 @@ object WeaponMark  extends App {
     run(args)
   }
 
-  // if no params, show help screen
+  // if no params passed, show help screen
   val a = if (args.isEmpty) Array("-h") else args
-  // remove leading hyphens and lower case from arg(0)
-  val o = a(0).substring(a(0).lastIndexOf('-') + 1).toLowerCase
+  // remove leading hyphens and lower case value from arg(0)
+  val arg0 = a(0).substring(a(0).lastIndexOf('-') + 1).toLowerCase
 
-  o match {
+  arg0 match {
     case "akira" => runAkira()
     case "e" => printExamples()
     case "examples" => printExamples()

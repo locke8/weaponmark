@@ -1,7 +1,5 @@
 package mage
-/**
-  * Created by Paul on 9/24/2016.
-  */
+
 import org.scalatest.AsyncFreeSpec
 
 class DieResultSpec extends AsyncFreeSpec {

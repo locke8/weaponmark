@@ -1,17 +1,16 @@
 package weaponmark
 
-/**
-  * Created by Paul on 9/24/2016.
-  */
 import com.diogonunes.jcdp.color.ColoredPrinter
 import com.diogonunes.jcdp.color.api.Ansi.{Attribute, BColor, FColor}
 
-sealed case class BenchmarkResults(benchmark: Benchmark,
-                                   var tot0Damage: Int = 0,
-                                   var totBotches: Int = 0,
-                                   var totMisses: Int = 0,
-                                   var totHits: Int = 0,
-                                   var totDamage: Int = 0) {
+sealed case class BenchmarkResults(
+  benchmark:      Benchmark,
+  var tot0Damage: Int = 0,
+  var totBotches: Int = 0,
+  var totMisses:  Int = 0,
+  var totHits:    Int = 0,
+  var totDamage:  Int = 0) {
+
   private val weapon = benchmark.weapon
   private val verbose = benchmark.verbose
   private val soakDice = benchmark.soakDice
@@ -65,6 +64,5 @@ sealed case class BenchmarkResults(benchmark: Benchmark,
     printTitle()
     printHeader()
     printDetail()
-    cp.clear()
   }
 }

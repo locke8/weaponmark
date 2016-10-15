@@ -1,21 +1,18 @@
 package weaponmark
 
-/**
-  * Created by Paul on 9/24/2016.
-  */
-import mage.{Success, Weapon}
+import mage.{Success, Weapon, DieResult}
 import org.scalactic.TimesOnInt._
 
-case class Benchmark(weapon: Weapon,
-                     verbose: Boolean = false,
-                     soakDice: Int = 0,
-                     iterations: Int = 1000000) {
+case class Benchmark(
+  weapon:     Weapon,
+  verbose:    Boolean = false,
+  soakDice:   Int = 0,
+  iterations: Int = 1000000) {
 
   private val results = BenchmarkResults(this)
 
   // use/fire/swing the weapon once, return true if botch occurs
   private def use(diceMod: Int = 0): Boolean = {
-    import mage.DieResult
     var (hits, damage) = weapon.use(diceMod)
     if (hits > 0) {
       soakDice times {

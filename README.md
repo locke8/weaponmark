@@ -2,7 +2,7 @@
 
 *How much damage does your weapon dish out?*
 _ _ _
-Weaponmark is a command line utility to compare weapon effeciencies for the game: **Mage The Ascension (WW4600 - Revised Edition)**. It  works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.
+Weaponmark is a command line utility to compare weapon efficiencies for the game: **Mage The Ascension (WW4600 - Revised Edition)**. It  works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.
 ## Quick Example:
 A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She has 4 strength, this becomes her damage dice. She is capable of one action per turn and wants to do as much damage as possible so elects to split the action into three actions with penalties. Here is what that looks like:
 
@@ -61,9 +61,9 @@ Type `weaponmark [Enter]` or `weaponmark --help [Enter]` to view usage instructi
 ### Actions
 Use the `-a<#>` parameter to specify the number of actions per turn. The default value is 1. For example, a character with Time Dilation(1) would gain a free action every turn and therefore warrant a `-a2` parameter on the command line.
 ### Split Action
-You can specify that the turn include a split action with `-s<#>`. A split action allows for 2 or 3 usages of the weapon during a single action. These split actions suffer from dice mod penalties. By default, these penalties are -2, -3, -4 for usage 1, 2, and (optionally) 3 in a split-action. These penalties are subtracted from the Hit Dice when performing the split-action. The penalty values can be overriden with the `-x<#>`, `-y<#>`, and `-z<#>` parameters.
+You can specify that the turn include a split action with `-s<#>`. A split action allows for 2 or 3 usages of the weapon during a single action. These split actions suffer from dice mod penalties. By default, these penalties are -2, -3, -4 for usage 1, 2, and (optionally) 3 in a split-action. These penalties are subtracted from the Hit Dice when performing the split-action. The penalty values can be overridden with the `-x<#>`, `-y<#>`, and `-z<#>` parameters.
 ### Soak Dice
-If you would like to see how your weapon will perform against opponents who can soak damage, usge the `-k<#>` parameter. For example, if you want to test your weapon effectiveness against an opponent with three soak dice, include `-k3` on the command line.
+If you would like to see how your weapon will perform against opponents who can soak damage, use the `-k<#>` parameter. For example, if you want to test your weapon effectiveness against an opponent with three soak dice, include `-k3` on the command line.
 ### Specialties
 Specialties, as described on page 117 of the core rules book, are supported. If you are specialized in the use of your weapon, every 10 you roll to hit yields a bonus roll. Additional rolls of 10 extend this effect. Rolling a 1 on the bonus roll cancels out the 10. Include the `-l` parameter to denote specialization with a weapon.
 ### Verbose Output

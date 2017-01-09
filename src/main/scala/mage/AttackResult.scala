@@ -3,7 +3,7 @@ package mage
 import com.typesafe.scalalogging.LazyLogging
 
 /**
-  * models the result of an attack using the attack() method and returns an algebraic type denoting the outcome as well
+  * models the result of an attack using the attack() method and returns an algebraic type denoting the outcome
   * as well as the # of hits and damage that occurred
   */
 sealed trait AttackResult extends Product with Serializable {

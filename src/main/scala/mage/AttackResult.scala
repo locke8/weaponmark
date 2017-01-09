@@ -94,8 +94,10 @@ object AttackResult extends LazyLogging {
     }
 
   /**
-    * returns effective damage successes or zero if no damage rolled.
-    * effective damage is that which is left after considering opponent defenses (soak dice)
+    * returns effective damage successes or zero if no damage rolled. Effective damage is that
+    * which is left after considering opponent defenses (soak dice).
+    *
+    * @return Int - the total effective damage scored
     */
   private def damage(bonusDice: Int, weapon: Weapon, opponent: Opponent) : Int = {
     // returns number of damage successes without considering opponent's defenses (soak dice)

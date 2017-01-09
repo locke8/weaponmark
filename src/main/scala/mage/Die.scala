@@ -1,17 +1,18 @@
 package mage
 
-case class Die(result: Int) {
-  require(result > 0 && (result <= Die.dieBase), "Die roll must be between 1 and " + Die.dieBase)
-
-  def isSpecial = result == Die.dieBase
-  def isBotch = result == 1
-  def isSuccess(threshold: Int = 6) = result >= threshold
+final case class Die(value: Int, difficulty: Int = 6) {
+  def isBotch:   Boolean = value == 1
+  def isSpecial: Boolean = value == Die.dieBase
+  def isSuccess: Boolean = value >= difficulty
+  require(value > 0 && (value <= Die.dieBase), "Die result must be between 1 and " + Die.dieBase)
+  require(difficulty > 1 && (difficulty <= Die.dieBase), s"difficulty must be > 1 and <= ${Die.dieBase}")
 }
 
 object Die {
   import scala.util.Random
   final val dieBase = 10
-  private val rnd = new Random
+  private[this] val rnd = new Random
 
-  def roll = Die(rnd.nextInt(dieBase) + 1)
+  /** returns a Die with a random value between 1 and dieBase */
+  def roll(difficulty: Int = 6) = Die(rnd.nextInt(dieBase) + 1, difficulty)
 }

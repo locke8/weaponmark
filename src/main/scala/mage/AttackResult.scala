@@ -9,26 +9,26 @@ import com.typesafe.scalalogging.LazyLogging
 sealed trait AttackResult extends Product with Serializable {
   val hits: Int
   val damage: Int
-  def botched: Boolean = false
+  def isBotch: Boolean = false
 }
 
 final case class AttackSucceeded(hits: Int, damage: Int) extends AttackResult {
   require(hits > 0,    s"hits($hits) rolled must be > zero if an attack succeeds")
   require(damage >= 0, s"damage($damage) rolled must be >= zero on attack success")
-  require(!botched,    s"botched ($botched) should return false")
+  require(!isBotch,    s"botched ($isBotch) should return false")
 }
 
 final case class AttackFailed(hits: Int, damage: Int = 0) extends AttackResult {
   require(hits == 0,   s"hits($hits) rolled must be zero if an attack fails")
   require(damage == 0, s"damage rolled ($damage) must be zero if an attack fails")
-  require(!botched,    s"botched ($botched) should return false")
+  require(!isBotch,    s"botched ($isBotch) should return false")
 }
 
 final case class AttackBotched(hits: Int, damage: Int = 0) extends AttackResult {
-  override def botched = true
+  override def isBotch = true
   require(hits <= 0,   s"hits($hits) rolled must be <= zero if a botch occurs")
   require(damage == 0, s"damage rolled ($damage) must be zero if a botch occurs")
-  require(botched,     s"botched ($botched) should return true")
+  require(isBotch,     s"botched ($isBotch) should return true")
 }
 
 object AttackResult extends LazyLogging {

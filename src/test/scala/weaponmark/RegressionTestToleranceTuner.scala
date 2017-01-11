@@ -9,7 +9,7 @@ import upickle.default.{read => unpickle}
   * Determines optimum tolerance values for running benchmark regression tests and print results.
   * @note Each iteration will take 15-20 seconds or so depending on cpu.
   */
-object ToleranceTuner extends App {
+object RegressionTestToleranceTuner extends App {
   private[this] val iterations = args(0).toInt
   private[this] var deltaPzd = 0.0d
   private[this] var deltaHpu = 0.0d

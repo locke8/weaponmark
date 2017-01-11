@@ -68,8 +68,8 @@ object WeaponMark extends App with LazyLogging {
       val dMod3        = opt[Int]("dMod3", short = 'z',
         descr = s"dice pool penalty for 3rd multi-action. default=multiActions+2, max=${Weapon.maxMultiPenalty}",
         validate = (d: Int) => d <= Weapon.maxMultiPenalty && (d >= 0))
-      val kiloTurns    = opt[Int]("kiloTurns", short = 'k', default = Some(Benchmark.minKiloTurns),
-        descr = s"turns to benchmark, in thousands. default=${Benchmark.minKiloTurns}, max=${Benchmark.maxKiloTurns}",
+      val kiloTurns    = opt[Int]("kiloTurns", short = 't', default = Some(Benchmark.minKiloTurns),
+        descr = s"turns to benchmark, expressed in thousands. default=${Benchmark.minKiloTurns}, max=${Benchmark.maxKiloTurns}",
         validate = (d: Int) => d >= Benchmark.minKiloTurns && (d <= Benchmark.maxKiloTurns))
       val soakDice     = opt[Int]("soakDice", short = 's', default = Some(0),
         descr = s"dice to roll that can soak damage. default=0, max=${Opponent.maxSoak}",

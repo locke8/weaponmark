@@ -38,7 +38,7 @@ Installation consists of downloading the program and unzipping it to a folder on
 > Type: `cd \Program Files\Weaponnmark [Enter]`
 
 3. Run the program, type:
-> Type: `weaponmark -i [Enter]`
+> Type: `weaponmark [Enter]`
 
 #### Examples
 ##### Usage Examples
@@ -47,13 +47,13 @@ Type `weaponmark --examples [Enter]` or `weaponmark -e [Enter]` to show some exa
 ![Examples Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/examples.png)
 
 #### Interactive Mode
-Type `weaponmark --interactive [Enter]` or `weaponmark -i [Enter]` to receive prompts for all needed input:
+Type `weaponmark [Enter]' or 'weaponmark --interactive [Enter]` or `weaponmark -i [Enter]` to receive prompts for all needed input:
 
 ![Interactive-mode Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/interactive.png)
 Interactive mode displays what the command line would look like using the input you provided
 
 #### Help
-Type `weaponmark [Enter]` or `weaponmark --help [Enter]` to view usage instructions and options:
+Type `weaponmark -h [Enter]` or `weaponmark --help [Enter]` to view usage instructions and options:
 
 ![Help Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/help.png)
 

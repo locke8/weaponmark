@@ -1,0 +1,1 @@
+{"$type":"weaponmark.BenchmarkResults","benchmark":{"weapon":{"name":"Punch","hitDice":9,"dmgDice":4,"actionsPerTurn":2},"opponent":{"soakDice":4},"turns":500000},"tot0Damage":294453,"totBotches":1708,"totMisses":61824,"totHits":3631795,"totDamage":1543714}

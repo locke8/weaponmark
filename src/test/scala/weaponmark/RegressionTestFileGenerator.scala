@@ -6,7 +6,7 @@ import upickle.{default => pickle}
 
 /**
   * create benchmark regression test files to use as base line in regression testing - BenchmarkRegressionSpec
-  * after running this, you might want to run ToleranceTuner(100) - and then go to lunch while it runs.
+  * after running this, you might want to run RegressionTestToleranceTuner(100) - and then go to lunch while it runs.
   */
 object RegressionTestFileGenerator extends App {
 

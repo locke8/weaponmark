@@ -12,11 +12,11 @@ final case class BenchmarkResults(
   // validate constructor parameters
   require(usesPerTurn > 0)
   require(turns > 0)
-  require(hits == 0)
-  require(misses == 0)
-  require(zeroDamage == 0)
-  require(botches == 0)
-  require(damage == 0)
+  require(hits >= 0)
+  require(misses >= 0)
+  require(zeroDamage >= 0)
+  require(botches >= 0)
+  require(damage >= 0)
 
   // mutators to increment counts
   def incZeroDamage(): Unit = zeroDamage += 1

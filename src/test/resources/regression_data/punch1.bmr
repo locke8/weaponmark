@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Punch","hitDice":9,"dmgDice":4,"specialty":true},"opponent":{},"turns":500000},{"usesPerTurn":1,"turns":500000,"hits":2017925,"misses":28722,"zeroDamage":6412,"botches":1023,"damage":1714110}]

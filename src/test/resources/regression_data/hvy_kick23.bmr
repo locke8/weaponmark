@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Heavy Kick","hitDice":9,"dmgDice":6,"hitDiff":7,"actionsPerTurn":2,"multiActions":3},"opponent":{},"turns":500000},{"usesPerTurn":4,"turns":500000,"hits":5475528,"misses":233509,"zeroDamage":9579,"botches":16083,"damage":7050646}]

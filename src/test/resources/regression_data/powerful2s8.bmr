@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Powerful Attack","hitDice":10,"dmgDice":9,"actionsPerTurn":2},"opponent":{"soakDice":8},"turns":500000},{"usesPerTurn":2,"turns":500000,"hits":4028356,"misses":51390,"zeroDamage":241401,"botches":852,"damage":2241540}]

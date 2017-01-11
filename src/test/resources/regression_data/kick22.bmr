@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Kick","hitDice":9,"dmgDice":4,"actionsPerTurn":2,"multiActions":2},"opponent":{},"turns":500000},{"usesPerTurn":3,"turns":500000,"hits":5438704,"misses":93480,"zeroDamage":22229,"botches":2551,"damage":4821174}]

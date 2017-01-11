@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Armored Punch","hitDice":9,"dmgDice":5,"actionsPerTurn":2,"multiActions":3,"specialty":true},"opponent":{},"turns":500000},{"usesPerTurn":4,"turns":500000,"hits":8037103,"misses":114978,"zeroDamage":12900,"botches":4064,"damage":7768217}]

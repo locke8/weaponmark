@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Pistol (DW Ambidex)","hitDice":9,"dmgDice":5,"actionsPerTurn":2,"multiActions":2,"dicePenalty1":1,"dicePenalty2":2},"opponent":{},"turns":500000},{"usesPerTurn":3,"turns":500000,"hits":4852089,"misses":114770,"zeroDamage":12824,"botches":5453,"damage":5180561}]

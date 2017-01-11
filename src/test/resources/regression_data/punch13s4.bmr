@@ -1,0 +1,1 @@
+[{"weapon":{"name":"Punch","hitDice":9,"dmgDice":4,"multiActions":3,"specialty":true},"opponent":{"soakDice":4},"turns":500000},{"usesPerTurn":3,"turns":500000,"hits":6036597,"misses":85793,"zeroDamage":406859,"botches":2984,"damage":2574777}]

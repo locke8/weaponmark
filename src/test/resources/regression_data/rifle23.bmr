@@ -1,0 +1,1 @@
+[{"weapon":{"name":"PN90 Rifle","hitDice":9,"dmgDice":7,"actionsPerTurn":2,"multiActions":3,"specialty":true},"opponent":{},"turns":500000},{"usesPerTurn":4,"turns":500000,"hits":8041788,"misses":114792,"zeroDamage":3312,"botches":4007,"damage":9644485}]

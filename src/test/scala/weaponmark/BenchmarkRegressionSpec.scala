@@ -5,12 +5,22 @@ import upickle.default.{read => unpickle}
 import scala.math.abs
 import mage.{Slow, UnitSpec}
 
+/**
+  * Re-runs saved benchmarks and compares new results with old results to ascertain that no errors have been introduced
+  * as the result of changes. Results will vary slightly from run to run due to the nature of the benchmark (random dice)
+  * so test equality is tolerance based. These tests should be run after making changes to the benchmark and must be
+  * run before creating a distribution build.
+  *
+  * Saved benchmarks (and their results) can be found in test/resources/regression_data. Run RegressionTestFileGenerator
+  * if constructor signature of Benchmark, BenchmarkResults, Weapon, or Opponent classes are changed as this will
+  * invalidate the format of the regression files and break the tests.
+  * RegressionTestToleranceTuner can be run to determine tolerances (or pretty darn close). The tolerance values are
+  * hard-coded in the class below.
+  */
 class BenchmarkRegressionSpec extends UnitSpec {
   private def regressionTest(fp: Path) = {
     type Tup = (Benchmark, BenchmarkResults)
-    val t = unpickle[Tup](read(fp))
-    val b = t._1
-    val r = t._2
+    val (b, r) = unpickle[Tup](read(fp))
     val r2 = Benchmark.newFrom(b).run()
     val deltaHpu = 0.011
     val deltaDpu = 0.01
@@ -50,6 +60,7 @@ class BenchmarkRegressionSpec extends UnitSpec {
         val files = ls! dir |? (_.ext == "bmr")
         files.foreach { path => regressionTest(path) }
         info(s"${files.size * 5} regression tests run")
+        files.size shouldBe 25
       }
     }
   }

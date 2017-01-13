@@ -1,7 +1,3 @@
-/**
-  * To enable debug logging change: <root level="ERROR"> to: <root level="TRACE"> in resources/logback.xml
-  * Note: make sure to set this back to "ERROR" before attempting to run regression tests (BenchmarkRegressionSpec)
-  */
 package weaponmark
 
 import com.diogonunes.jcdp.color.ColoredPrinter
@@ -11,10 +7,11 @@ import org.rogach.scallop._
 import scala.language.reflectiveCalls
 import mage.{Opponent, Weapon, Die}
 
-
 /**
-  * Benchmarks the use of a weapon in the game Mage:The Ascension revised edition and produce statistics
+  * Benchmarks the use of a weapon in the game Mage:The Ascension revised edition and produces statistics
   * showing its effectiveness.
+  * To enable debug logging change: <root level="ERROR"> to: <root level="TRACE"> in resources/logback.xml
+  * Note: make sure to set this back to "ERROR" before attempting to run regression tests (BenchmarkRegressionSpec)
   */
 object WeaponMark extends App with LazyLogging {
 
@@ -31,7 +28,7 @@ object WeaponMark extends App with LazyLogging {
   }
 
   /** open default browser on readme.md page on github */
-  def showAboutInfo(): Unit = {
+  private def showAboutInfo(): Unit = {
     val url = "https://github.com/locke8/weaponmark"
     Runtime.getRuntime.exec( "rundll32 url.dll,FileProtocolHandler " + url)
   }
@@ -121,15 +118,15 @@ object WeaponMark extends App with LazyLogging {
   }
 
   // if no params passed then start interview
-  val a = if (args.isEmpty) Array("-i") else args
+  private val a = if (args.isEmpty) Array("-i") else args
   // remove leading hyphens and lower case the first argument
-  val arg0 = a(0).substring(a(0).lastIndexOf('-') + 1).toLowerCase
+  private val arg0 = a(0).substring(a(0).lastIndexOf('-') + 1).toLowerCase
 
   printTitle()
   arg0 match {
     case "about"             => showAboutInfo()
     case "e" | "examples"    => Example(cp)
-    case "i" | "interactive" => run(Interview(cp).results)
+    case "i" | "interactive" => run(Interview(cp).run())
     case "version"           => // already handled by call to printTitle() just above
     case _                   => run(a)
   }

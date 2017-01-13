@@ -8,3 +8,6 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.1.4")
 
 // util to produce dependency graphs s/b moved to global folder of .sbt
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
+
+// used for documentation generation
+addSbtPlugin("com.lihaoyi" % "scalatex-sbt-plugin" % "0.3.7")

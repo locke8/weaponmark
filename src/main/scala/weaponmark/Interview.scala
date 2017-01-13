@@ -1,6 +1,6 @@
 /**
   * Consider using TextIO to provide input masking, value constraints, selection from a list and possibly custom error messages
-  * Consider using JLine2
+  * Consider using JLine2 for same
   * https://dzone.com/articles/interactive-console-applications-in-java?edition=244484
   * https://github.com/beryx/text-io
   */
@@ -9,9 +9,9 @@ package weaponmark
 import com.diogonunes.jcdp.color.ColoredPrinter
 import com.diogonunes.jcdp.color.api.Ansi.{Attribute, BColor, FColor}
 
+/** Solicits the user for all command-line input needed to run a benchmark. */
 case class Interview(cp: ColoredPrinter) {
   private final val input = scala.io.StdIn
-  val results = run()
 
   private def readString(prompt: String, default: String) : String = {
     cp.print(prompt, Attribute.DARK, FColor.GREEN, BColor.BLACK)
@@ -35,7 +35,7 @@ case class Interview(cp: ColoredPrinter) {
   }
 
   /** Asks the user for all necessary input and returns the results as a Seq[String] */
-  private def run() : Seq[String] = {
+  def run() : Seq[String] = {
     cp.println("")
     val name    = readString("Weapon Name: ", "WeaponX")
     val hitDice = readString("Hit Dice: ", "1")

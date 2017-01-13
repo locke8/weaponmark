@@ -11,6 +11,7 @@ libraryDependencies ++= Seq(
   "com.lihaoyi" %% "ammonite-ops" % "0.8.0", // % "test",
   "org.scalactic" %% "scalactic" % "3.0.0",
   "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+//  "com.lihaoyi" %% "scalatags" % "0.6.1"
 )
 
 name := "weaponmark"
@@ -39,6 +40,10 @@ scalacOptions ++= List(
   "-Xfuture",           // turn on future language features
   "-feature"            // provide warning info about misused language features
 )
+
+// ScalaText documentation generation
+scalatex.SbtPlugin.projectSettings
+
 // for sbt-dependency-graph
 filterScalaLibrary := true
 

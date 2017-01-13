@@ -3,6 +3,7 @@ package weaponmark
 import com.diogonunes.jcdp.color.ColoredPrinter
 import com.diogonunes.jcdp.color.api.Ansi.{Attribute, BColor, FColor}
 
+/** Prints multiple command line examples with explanations. */
 case class Example(cp: ColoredPrinter) {
   private def print() = {
     val cmdColor = FColor.YELLOW
@@ -25,7 +26,7 @@ case class Example(cp: ColoredPrinter) {
 
     cp.println("""
 
-   2) weaponmark -lv Heavy Kick 8 6 7""", Attribute.CLEAR, cmdColor, BColor.BLACK)
+   2) weaponmark -l Heavy Kick 8 6 7""", Attribute.CLEAR, cmdColor, BColor.BLACK)
     cp.println("""
 
       Benchmark a Heavy Kick with 8 hit dice, 7 hit difficulty,

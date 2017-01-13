@@ -11,7 +11,6 @@ libraryDependencies ++= Seq(
   "com.lihaoyi" %% "ammonite-ops" % "0.8.0", // % "test",
   "org.scalactic" %% "scalactic" % "3.0.0",
   "org.scalatest" %% "scalatest" % "3.0.0" % "test"
-//  "com.lihaoyi" %% "scalatags" % "0.6.1"
 )
 
 name := "weaponmark"
@@ -26,9 +25,6 @@ assemblyOutputPath in assembly := baseDirectory.value / ("target/universal/jdkpa
 // remove "app" directory from root, sbt-native-packager:
 // http://sbt-native-packager.readthedocs.io/en/latest/formats/universal.html#universal-plugin
 //topLevelDirectory := None
-// print test results as they occur, which improves progress-feedback for the slow regression tests
-// #TODO determine if this should be used to create more timely feedback when running regression tests
-//logBuffered := false
 
 scalacOptions ++= List(
 // "-unchecked",

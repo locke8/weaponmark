@@ -10,8 +10,8 @@ import mage.{Opponent, Weapon, Die}
 /**
   * Benchmarks the use of a weapon in the game Mage:The Ascension revised edition and produces statistics
   * showing its effectiveness.
-  * To enable debug logging change: <root level="ERROR"> to: <root level="TRACE"> in resources/logback.xml
-  * Note: make sure to set this back to "ERROR" before attempting to run regression tests (BenchmarkRegressionSpec)
+  * @note To enable debug logging change: <root level="ERROR"> to: <root level="TRACE"> in resources/logback.xml
+  *       make sure to set this back to "ERROR" before attempting to run regression tests (BenchmarkRegressionSpec)
   */
 object WeaponMark extends App with LazyLogging {
 

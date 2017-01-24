@@ -9,7 +9,7 @@ final case class Benchmark(weapon: Weapon, opponent: Opponent, turns: Int = 2000
   require(turns <= Benchmark.maxKiloTurns * 1000)
   // minimum turns not enforced to support debugging runs where only 100 or so may be needed or desired
 
-  private val results = BenchmarkResults(weapon.usesPerTurn, turns)
+  private val results: BenchmarkResults = BenchmarkResults(weapon.usesPerTurn, turns)
   private val border = "================================================================================"
 
   private def logHeader() = {
@@ -29,7 +29,7 @@ final case class Benchmark(weapon: Weapon, opponent: Opponent, turns: Int = 2000
     * use/fire/swing the weapon once collecting results as statistics
     * @return ''true'' on hit or miss (weapon was used) OR ''false'' if botch occurs
     */
-  private def useWeapon(diceMod: Int = 0) : Boolean = {
+  private def useWeapon(diceMod: Int = 0): Boolean = {
     val result = weapon.attack(diceMod, opponent)
 
     // tally results
@@ -49,7 +49,7 @@ final case class Benchmark(weapon: Weapon, opponent: Opponent, turns: Int = 2000
   /** performs all weapon actions/usages for a single turn */
   private def iterateOneTurn() = {
     /** performs any specified regular actions, stops on botch, returns true on success or false if botch occurred */
-    def doNormalActions(times: Int, noBotch: Boolean = true) : Boolean =
+    def doNormalActions(times: Int, noBotch: Boolean = true): Boolean =
       if (times > 0 && noBotch)
         doNormalActions(times - 1, useWeapon())
       else noBotch

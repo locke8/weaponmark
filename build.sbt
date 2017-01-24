@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
 
 name := "weaponmark"
 version := "1.0" //-BETA"
-scalaVersion := "2.11.8"
+scalaVersion in ThisBuild := "2.11.8"
 maintainer := "Paul L. Bryan"
 packageSummary := "Attack benchmarking tool for Mage: The Ascension (2nd Edition, WW4600)"
 packageDescription := "Attack benchmark tool for Mage: The Ascension"
@@ -36,9 +36,6 @@ scalacOptions ++= List(
   "-Xfuture",           // turn on future language features
   "-feature"            // provide warning info about misused language features
 )
-
-// ScalaText documentation generation
-scalatex.SbtPlugin.projectSettings
 
 // for sbt-dependency-graph
 filterScalaLibrary := true
@@ -77,3 +74,37 @@ lazy val root = (project in file(".")).
     buildInfoKeys := Seq[BuildInfoKey](name, version, scalaVersion, sbtVersion),
     buildInfoPackage := "weaponmark"
   )
+
+// ScalaText documentation generation
+scalatex.SbtPlugin.projectSettings
+
+lazy val readme = scalatex.ScalatexReadme(
+  projectId = "readme",
+  wd = file(""),
+  url = "https://github.com/locke8/weaponmark/tree/master",
+  source = "Readme"
+).settings(
+  scalaVersion := "2.11.8"
+)
+
+/*
+lazy val readme = scalatex.ScalatexReadme(
+  projectId = "readme",
+  wd = file(""),
+  url = "https://github.com/lihaoyi/scalatags/tree/master",
+  source = "Readme",
+  autoResources = Seq("Autocomplete.png", "ErrorHighlighting.png", "InlineDocs.png", "example-opt.js")
+).settings(
+  scalaVersion := "2.11.8",
+  (unmanagedSources in Compile) += baseDirectory.value/".."/"project"/"Constants.scala",
+  (resources in Compile) += (fullOptJS in (example, Compile)).value.data,
+  (resources in Compile) += (doc in (scalatagsJS, Compile)).value,
+  (run in Compile) := (run in Compile).dependsOn(Def.task{
+    sbt.IO.copyDirectory(
+      (doc in (scalatagsJS, Compile)).value,
+      (target in Compile).value/"scalatex"/"api",
+      overwrite = true
+    )
+  }).evaluated
+)
+*/

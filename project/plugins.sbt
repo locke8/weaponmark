@@ -10,4 +10,4 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.1.4")
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
 
 // used for documentation generation
-addSbtPlugin("com.lihaoyi" % "scalatex-sbt-plugin" % "0.3.7")
+//addSbtPlugin("com.lihaoyi" % "scalatex-sbt-plugin" % "0.3.7")

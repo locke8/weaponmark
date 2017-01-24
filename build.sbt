@@ -76,6 +76,7 @@ lazy val root = (project in file(".")).
   )
 
 // ScalaText documentation generation
+/*
 scalatex.SbtPlugin.projectSettings
 
 lazy val readme = scalatex.ScalatexReadme(
@@ -86,6 +87,7 @@ lazy val readme = scalatex.ScalatexReadme(
 ).settings(
   scalaVersion := "2.11.8"
 )
+*/
 
 /*
 lazy val readme = scalatex.ScalatexReadme(

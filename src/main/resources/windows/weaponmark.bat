@@ -1,1 +1,1 @@
-@java -jar "Weaponmark-assembly-1.0a.jar" %*
+@java -jar "weaponmark-assembly.jar" %*

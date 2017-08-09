@@ -23,7 +23,7 @@ object WeaponMark extends App with LazyLogging {
   private def printTitle() = {
     cp.clear()
     cp.print(s"\n${BuildInfo.name} ", Attribute.CLEAR, FColor.CYAN, BColor.BLACK)
-    cp.print(s"${BuildInfo.version}-BETA", Attribute.CLEAR, FColor.YELLOW, BColor.BLACK)
+    cp.print(s"${BuildInfo.version}", Attribute.CLEAR, FColor.YELLOW, BColor.BLACK)
     cp.print(s" for Mage: The Ascension (WW4600 - Revised Edition)\n", Attribute.CLEAR, FColor.WHITE, BColor.BLACK)
   }
 

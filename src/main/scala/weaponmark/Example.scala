@@ -49,6 +49,8 @@ case class Example(cp: ColoredPrinter) {
     cp.println("""
 
       Interactive mode. You will be queried for all needed input.
+      Using --interview or no parameters at all will also start
+      the interactive mode.
                """, Attribute.CLEAR, descColor, BColor.BLACK)
     cp.clear()
   }

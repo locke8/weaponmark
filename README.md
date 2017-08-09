@@ -7,12 +7,30 @@ Weaponmark is a command line utility to compare weapon efficiencies for the game
 A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She has 4 strength, this becomes her damage dice. She is capable of one action per turn and wants to do as much damage as possible so elects to split the action into three "Multiple Actions" with penalties. Here is what that looks like:
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch_v.png)
-##Motivation
+## Motivation
 The purpose of this utility is to aid in play balancing the game. If you have played *Mage The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system. Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
 
 It is also useful to players looking to compare the strengths and weaknesses of various attacks (e.g. a punch vs. a rifle shot) and their effectiveness on opponents who can soak damage. 
 
-Questions such as how much damage would my attack do against an opponent with 3 stamina and 2 armor, or how likely am I to miss or botch if I split my action into three "Multiple Actions" can all be answered. 
+Questions such as how much damage would my attack do against an opponent with 3 stamina and 2 armor, or how likely am I to miss or botch if I split my action into three "Multiple Actions" can all be answered.
+### Example
+When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to hit dice at a cost of +1 to hit difficulty. I strongly suspected the "heavy kick" attack was a loser.
+
+![Broken Heavy Kick Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/kicking.png)
+
+As you can see the "heavy kick" is indeed broken. In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10) -- *you do slightly less damage per attempt than just a regular kick. Zero Upside.*
+
+#### Possible Solution
+As a potential solution you might try this for a "heavy" kick:
+
+  - hit dice = strength + 3  *(compared to +1 in rules)*
+
+  - hit difficulty = 7       *(+1 above normal difficulty, just as in core rules)*
+
+This seems to yield results with a reasonable upside. You will still botch four times as often
+and be ineffective 1 in 6.7 attempts -- BUT -- you will also average .7 to .8 more points of damage per successful attack. If you would like the reward to be less (about .3) use strength+2 instead. For my character with four stength, ten percent more damage for the additional risks is not compelling. Twenty five percent more damage for 4x botching and increased misses - that is a risk I could see myself taking; especially if desperate.
+Before Weaponmark I had no way to know for sure what was going on; now it's easy to find problems and try out alternative solutions.
+
 ## Getting Started
 ### Installation
 #### Windows
@@ -50,21 +68,21 @@ Type `weaponmark --examples [Enter]` or `weaponmark -e [Enter]` to show some exa
 Type `weaponmark [Enter]' or 'weaponmark --interactive [Enter]` or `weaponmark -i [Enter]` to receive prompts for all needed input:
 
 ![Interactive-mode Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/interactive.png)
-Interactive mode displays what the command line would look like using the input you provided
+Interactive mode displays what the command line would look like using the input you provided and then runs the benchmark.
 
 #### Help
 Type `weaponmark -h [Enter]` or `weaponmark --help [Enter]` to view usage instructions and options:
 
 ![Help Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/help.png)
 
-##More Features
-### Actions (p.213-216, )
-Use the `-a<#>` parameter to specify the number of actions per turn. The default value is 1. For example, a character with Time Dilation(1) would gain a free action every turn and therefore warrant a `-a2` parameter on the command line.
+## More Features
+### Actions (p.213-216)
+Use the `-a<#>` parameter to specify the number of actions per turn. The default value is 1. For example, a character with Time Dilation(1) would gain a free action every turn and therefore warrant an `-a2` parameter on the command line.
 ### Multiple Actions (p.215, p.239)
 You can specify that the turn include a multi-action with `-m<#>`. A Multi-action action allows for 2 or 3 usages of the weapon during a single action. These "split" actions suffer from dice pool penalties. By default, these penalties are 2, 3, 4 for usage 1, 2, and (optionally) 3 in a multi-action. The penalties are subtracted from the hit dice pool when executing the attack. The penalty values can be overridden with the `-x<#>`, `-y<#>`, and `-z<#>` parameters.
 ### Soak Dice (p.238)
 If you would like to see how your weapon will perform against opponents who can soak damage, use the `-s<#>` parameter. For example, if you want to test your weapon effectiveness against an opponent with three soak dice, include `-s3` on the command line.
-### Specialties
+### Specialties (p.117)
 Specialties, as described on page 117 of the core rules book, are supported. If you are specialized in the use of your weapon, every 10 you roll to hit yields a bonus roll. Additional rolls of 10 extend this effect. Rolling a 1 on the bonus roll cancels out the 10. Include the `-l` parameter to denote specialization with a weapon.
 ### KiloTurns
 if you are not satisfied with the default 200,000 turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of turns (in thousands) that the benchmark should run.  For example, to run one million turns, include `-t1000` on the command line.

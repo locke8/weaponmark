@@ -18,7 +18,7 @@ final case class BenchmarkResultsPrinter(b: Benchmark, r: BenchmarkResults) {
     cp.print(weapon.name + (if (weapon.specialty) " (specialized)" else ""), Attribute.CLEAR, FColor.CYAN, BColor.BLACK)
     cp.clear()
     cp.println(
-      ": " + weapon.usesPerTurn + " attempted uses/turn" +
+      ": " + weapon.usesPerTurn + " attempted uses per turn" +
         (if (weapon.multiActions > 0) f" including a multi-action(${weapon.multiActions})" else "") +
         (if (soakDice > 0) s" plus $soakDice soak dice"  else "") +
         f" for $turns%,d turns:")

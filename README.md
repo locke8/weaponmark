@@ -1,4 +1,4 @@
-![Weaponmark](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/weaponmark.png)
+![Weaponmark](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/weaponmark.jpg)
 
 *How much damage does your weapon dish out?*
 _ _ _
@@ -6,7 +6,7 @@ Weaponmark is a command line utility to compare weapon efficiencies for the game
 ## Quick Example:
 A fist fighter with 4 dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She has 4 strength, this becomes her damage dice. She is capable of one action per turn and wants to do as much damage as possible so elects to split the action into three "Multiple Actions" with penalties. Here is what that looks like:
 
-![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch_v.png)
+![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch.png)
 ## Motivation
 The purpose of this utility is to aid in play balancing the game. If you have played *Mage The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system. Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
 

@@ -14,7 +14,7 @@ It is also useful to players looking to compare the strengths and weaknesses of 
 
 Questions such as how much damage would my attack do against an opponent with 3 stamina and 2 armor, or how likely am I to miss or botch if I split my action into three "Multiple Actions" can all be answered.
 ### Another Example
-When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to hit dice at a cost of +1 to hit difficulty. I strongly suspected the "heavy kick" attack was a loser.
+When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to damage dice at a cost of +1 to hit difficulty. I strongly suspected the "heavy kick" attack was a loser.
 
 ![Broken Heavy Kick Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/kicking.png)
 
@@ -23,12 +23,12 @@ As you can see the "heavy kick" is indeed broken. In exchange for being four tim
 #### Possible Solution
 As a potential solution you might try this for a "heavy" kick:
 
-  - hit dice = strength + 3  *(compared to +1 in rules)*
+  - damage dice = strength + 3  *(compared to +1 in rules)*
 
   - hit difficulty = 7       *(+1 above normal difficulty, just as in core rules)*
 
 This seems to yield results with a reasonable upside. You will still botch four times as often
-and be ineffective 1 in 6.7 attempts -- BUT -- you will also average .7 to .8 more points of damage per successful attack. If you would like the reward to be less (about .3) use strength+2 instead. For my character with four stength, ten percent more damage for the additional risks is not compelling. Twenty five percent more damage for 4x botching and increased misses - that is a risk I could see myself taking; especially if desperate.
+and be ineffective 1 in 6.7 attempts -- BUT -- you will also average .7 to .8 more points of damage per successful attack. If you would like the reward to be less (about .3) use strength+2 instead. For my character with four strength, ten percent more damage for the additional risks is not compelling. Twenty five percent more damage for 4x botching and increased misses - can be a risk worth taking; especially if desperate.
 Before Weaponmark I had no way to know for sure what was going on; now it's easy to find problems and try out alternative solutions.
 
 ## Getting Started

@@ -13,12 +13,12 @@ The purpose of this utility is to aid in play balancing the game. If you have pl
 It is also useful to players looking to compare the strengths and weaknesses of various attacks (e.g. a punch vs. a rifle shot) and their effectiveness on opponents who can soak damage. 
 
 Questions such as how much damage would my attack do against an opponent with 3 stamina and 2 armor, or how likely am I to miss or botch if I split my action into three "Multiple Actions" can all be answered.
-### Example
+### Another Example
 When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to hit dice at a cost of +1 to hit difficulty. I strongly suspected the "heavy kick" attack was a loser.
 
 ![Broken Heavy Kick Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/kicking.png)
 
-As you can see the "heavy kick" is indeed broken. In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10) -- *you do slightly less damage per attempt than just a regular kick. Zero Upside.*
+As you can see the "heavy kick" is indeed broken. In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10) -- *you do slightly less damage per attempt than just a regular kick.* Zero Upside.
 
 #### Possible Solution
 As a potential solution you might try this for a "heavy" kick:

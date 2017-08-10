@@ -42,7 +42,7 @@ Installation consists of downloading the program and unzipping it to a folder on
 > Detailed instructions: https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jre_install.html
 
 **Step 2:** Download the utility and unzip it to a folder on your computer:
-> Download [this](https://github.com/locke8/weaponmark/releases/download/v1.0a/weaponmark_1.0a.zip) zip file
+> Download [this](https://github.com/locke8/weaponmark/releases/download/v1.0a/weaponmark_1.1b.zip) zip file
 >
 > Create a folder in `C:\Program Files` called `Weaponmark`
 >

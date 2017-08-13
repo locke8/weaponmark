@@ -18,7 +18,7 @@ case class Interview(cp: ColoredPrinter) {
     cp.print(prompt, Attribute.DARK, FColor.GREEN, BColor.BLACK)
     cp.clear()
     val i = input.readLine()
-    if (i.isEmpty) {
+    if (i.isEmpty && !default.isEmpty) {
       cp.print("  " + default + "\n", Attribute.LIGHT, FColor.BLACK, BColor.BLACK)
       cp.clear()
       default
@@ -61,7 +61,7 @@ case class Interview(cp: ColoredPrinter) {
   /** Asks the user for all necessary input and returns the results as a Seq[String] */
   def run() : Seq[String] = {
     cp.println("")
-    val name    = readString("Weapon Name: ", "WeaponX")
+    val name    = readString("Weapon/Attack Name: ", "Unnamed Weapon")
     val hitDice = readInt("Hit Dice: ", 1)
     val dmgDice = readInt("Damage Dice: ", 1)
     val hitDiff = readInt(s"Hit Difficulty, default = ${Weapon.baseHitDifficulty}: ", Weapon.baseHitDifficulty)
@@ -78,13 +78,35 @@ case class Interview(cp: ColoredPrinter) {
     // if multi-action, ask about custom hit-dice-pool penalties
     val p1 = "  Hit dice pool penalty for 1st use (default = -multiActions): "
     val dMod1 = if (mAction > 0) readString(p1, "") else ""
+    if (mAction > 1 && dMod1.isEmpty) {
+      cp.println("    " + (-mAction).toString, Attribute.LIGHT, FColor.BLACK, BColor.BLACK)
+      cp.clear()
+      cp.println("")
+    }
     val p2 = "  Hit dice pool penalty for 2nd use (default = -multiActions+1): "
     val dMod2 = if (mAction > 1) readString(p2, "") else ""
+    if (mAction > 1 && dMod2.isEmpty) {
+      cp.println("    " + (-(mAction+1)).toString, Attribute.LIGHT, FColor.BLACK, BColor.BLACK)
+      cp.clear()
+      cp.println("")
+    }
     val p3 = "  Hit dice pool penalty for 3rd use (default = -multiActions+2): "
     val dMod3 = if (mAction > 2) readString(p3, "") else ""
-
-    val args =
-      (if (!spec)           Seq.empty else Seq("-l")) ++
+    if (mAction > 2 && dMod3.isEmpty) {
+      cp.println("    " + (-(mAction+2)).toString, Attribute.LIGHT, FColor.BLACK, BColor.BLACK)
+      cp.clear()
+      cp.println("")
+    }
+    
+    if (mAction + (if (mAction > 2) 2 else 1) > hitDice) {
+      cp.println("Not enough Hit Dice to perform this Multi-Action attack", Attribute.DARK, FColor.RED, BColor.BLACK)
+      cp.clear()
+      cp.println("")
+      System.exit(-1)
+  }
+  
+  val args =
+    (if (!spec)           Seq.empty else Seq("-l")) ++
       (if (actions < 2)     Seq.empty else Seq("-a" + actions.toString)) ++
       (if (mAction < 1)     Seq.empty else Seq("-m" + mAction)) ++
       (if (dMod1.isEmpty)   Seq.empty else Seq("-x" + dMod1)) ++

@@ -7,7 +7,7 @@ It  works for martial arts, brawling, melee, and firearm weapons. You supply the
 Weaponmark is easy to use. You don't need to learn the command line parameters first, just leave them off and the program will ask you for the inputs.
 
 ## Quick Example:
-A fist fighter with 4 Dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She also has 4 Strength; this becomes her damage dice.
+A fist fighter with 4 Dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She also has 4 Strength; this becomes her Damage Dice.
 
 Here is what that looks like in Weaponmark:
 
@@ -51,8 +51,8 @@ As a potential solution you might try this for a "heavy" kick:
   - Hit Difficulty = 7 *(no change from core rules)*
 
 This seems to yield results with a reasonable upside. You will still botch four times as often
-and be ineffective 1 in 6.7 attempts -- BUT -- you will also average .7 to .8 more points of damage per successful attack.
-If you would like the reward to be less (about .3) use strength+2 instead.
+and be ineffective 1 in 6.7 attempts -- BUT -- you will also average 0.7 to 0.8 more points of damage per successful attack.
+If you would like the bonus to damage to be less (about 0.3 more points) use strength+2 instead.
 For me, ten percent more damage for the additional risks is not very compelling; twenty five percent more damage seems worthwhile from a risk/reward perspective.
 Of course each Storyteller should decide what works best for their particular campaign.
 Weaponmark can help you understand what is going on with an attack, find problems (like the one above), and make it easy to experiment with alternative solutions.
@@ -61,7 +61,7 @@ Weaponmark can help you understand what is going on with an attack, find problem
 ### Installation
 #### Windows
 Installation consists of downloading the program and unzipping it to a folder on your computer.
-You will need to install Java JRE 8 if you do not already have it on your computer.
+You will also need to install Java JRE 8 if you do not already have it.
 
 **Step 1:** Install Java JRE 8 if not already installed on your computer:
 > Download page: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html -- you want the file whose name ends with `windows-x64.exe`
@@ -69,7 +69,7 @@ You will need to install Java JRE 8 if you do not already have it on your comput
 > Detailed instructions: https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jre_install.html
 
 **Step 2:** Download the utility and unzip it to a folder on your computer:
-> Download [this](https://github.com/locke8/weaponmark/releases/download/v1.0a/weaponmark_1.1b.zip) zip file
+> Download [this](https://github.com/locke8/weaponmark/releases/download/1.1-BETA/weaponmark_1.1b.zip) zip file
 >
 > Create a folder in `C:\Program Files` called `Weaponmark`
 >

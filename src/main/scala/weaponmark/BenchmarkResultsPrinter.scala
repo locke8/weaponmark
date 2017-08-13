@@ -33,8 +33,9 @@ final case class BenchmarkResultsPrinter(b: Benchmark, r: BenchmarkResults) {
 
   private def printDetail() = {
     cp.clear()
-    cp.print(f"${r.hitsPerUse}%10.2f ${r.hitsPerTurn}%10.2f ${r.damPerUse}%8.2f", Attribute.CLEAR, FColor.YELLOW, BColor.BLACK)
-    cp.print(f"${r.damPerTurn}%10.2f", Attribute.BOLD, FColor.CYAN, BColor.BLACK)
+    cp.print(f"${r.hitsPerUse}%10.2f ${r.hitsPerTurn}%10.2f", Attribute.CLEAR, FColor.YELLOW, BColor.BLACK)
+    cp.print(f"${r.damPerUse}%9.2f", Attribute.BOLD, FColor.CYAN, BColor.BLACK)
+    cp.print(f"${r.damPerTurn}%10.2f", Attribute.CLEAR, FColor.CYAN, BColor.BLACK)
     cp.print(f"${r.pctMisses}%7.2f%% ${r.pctBotches}%7.2f%%${r.pctZeroDam}%10.2f%%", Attribute.CLEAR, FColor.YELLOW, BColor.BLACK)
     cp.print(f"${r.pctIneffective}%14.2f%%",Attribute.CLEAR, FColor.CYAN, BColor.BLACK)
     cp.print(f"   1 in ${100.0 / (r.pctIneffective + .05) }%2.1f", Attribute.CLEAR, FColor.CYAN, BColor.BLACK)

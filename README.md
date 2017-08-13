@@ -2,39 +2,50 @@
 
 *How much damage does your weapon dish out?*
 _ _ _
-Weaponmark is a command line utility to compare weapon efficiencies for the game: **Mage The Ascension (WW4600 - Revised Edition)**. It  works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage. An interactive mode makes it quick and easy to use.
+Weaponmark is a command line utility to compare weapon efficiencies for the game: **Mage The Ascension (WW4600 - Revised Edition)**.
+It  works for martial arts, brawling, melee, and firearm weapons. You supply the inputs like weapon name, hit dice, etc. and Weaponmark will show you the average hits and damage per turn as well as the percent of time you will miss, botch, or hit but do no damage.
+Weaponmark is easy to use. You don't need to learn the command line parameters first, just leave them off and the program will ask you for the inputs.
+
 ## Quick Example:
-A fist fighter with 4 Dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She has 4 strength; this becomes her damage dice.
+A fist fighter with 4 Dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She also has 4 Strength; this becomes her damage dice.
 
 Here is what that looks like in Weaponmark:
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch.png)
 
-Since we don't yet know the command line parameters, we type `weaponmark [Enter]` to have the program ask us for them. We enter the first three parameters (Weapon Name, Hit Dice, and Damage Dice) and accept the defaults for the rest (by pressing enter repeatedly). Next we see the line `= weaponmark Punch 8 4` which shows us how we can run the same command by supplying the needed parameters on the command line. Lastly, weaponmark prints the details of how the benchmark was run and what the results were.
+Since we don't yet know the command line parameters, we type `weaponmark [Enter]` to have the program ask us for them.
+We enter the first three parameters (Weapon Name, Hit Dice, and Damage Dice) and accept the defaults for the rest (by pressing enter repeatedly).
+Next we see the line `= weaponmark Punch 8 4` which shows us how we can run the same command by supplying the needed parameters on the command line, teach us as we go.
+Lastly, weaponmark prints the details of how the benchmark was run and what the results were.
 
 Here is the exact same command entered *with parameters* on the command line:
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch2.png)
 
 ## Motivation
-The purpose of this utility is to aid in play balancing the game. If you have played *Mage The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system. Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
+The purpose of this utility is to aid in play balancing the game.
+If you have played *Mage The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system.
+Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
 
 It is also useful to players looking to compare the strengths and weaknesses of various attacks (e.g. a punch vs. a rifle shot) and their effectiveness on opponents who can soak damage. 
 
 Questions such as how much damage would my attack do against an opponent with 3 stamina and 2 armor, or how likely am I to miss or botch if I split my action into three "Multiple Actions" can all be answered.
 ### Another Example
-When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to damage dice at a cost of +1 to hit difficulty. I strongly suspected the "heavy kick" attack was a loser.
+When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to damage dice at a cost of +1 to hit difficulty.
+I suspected the "heavy kick"-attack was a loser. Weaponmark reveals the truth:
 
 ![Broken Heavy Kick Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/kicking.png)
 
-As you can see the "heavy kick" is indeed broken. In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10) -- *you do slightly **less** damage per attempt than just a regular kick.* Zero upside.
+As you can see the "heavy kick" is indeed broken.
+In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10) -- *you do slightly **less** damage per attempt than just a regular kick.*
+Zero upside.
 
 #### Possible Solution
 As a potential solution you might try this for a "heavy" kick:
 
-  - damage dice = strength + 3 *(compared to +1 in rules)*
+  - Damage Dice = Strength + 3 *(compared to +1 in rules)*
 
-  - hit difficulty = 7 *(no change from core rules)*
+  - Hit Difficulty = 7 *(no change from core rules)*
 
 This seems to yield results with a reasonable upside. You will still botch four times as often
 and be ineffective 1 in 6.7 attempts -- BUT -- you will also average .7 to .8 more points of damage per successful attack.
@@ -46,7 +57,8 @@ Weaponmark can help you understand what is going on with an attack, find problem
 ## Getting Started
 ### Installation
 #### Windows
-Installation consists of downloading the program and unzipping it to a folder on your computer. You will need to install Java JRE 8 if you do not already have it on your computer.
+Installation consists of downloading the program and unzipping it to a folder on your computer.
+You will need to install Java JRE 8 if you do not already have it on your computer.
 
 **Step 1:** Install Java JRE 8 if not already installed on your computer:
 > Download page: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html -- you want the file whose name ends with `windows-x64.exe`

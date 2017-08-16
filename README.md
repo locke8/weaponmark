@@ -7,7 +7,7 @@ It  works for martial arts, brawling, melee, and firearm weapons. You supply the
 Weaponmark is easy to use. You don't need to learn the command line parameters first, just leave them off and the program will ask you for the inputs.
 
 ## Quick Example:
-A fist fighter with 4 Dexterity and 4 in the skill "Brawl" punches with 8 hit dice. She also has 4 Strength; this becomes her Damage Dice.
+A fist fighter with 4 Dexterity and 4 in the skill *Brawl* punches with 8 hit dice. She also has 4 Strength; this becomes her Damage Dice.
 
 Here is what that looks like in Weaponmark:
 
@@ -23,7 +23,7 @@ Here is the exact same command entered *with parameters* on the command line:
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch2.png)
 
 ## Motivation
-The purpose of this utility is to aid in play balancing the game.
+The purpose of this utility is to aid in play-balancing the game.
 If you have played *Mage The Ascension* you know it is both wonderful and wonderfully vague in explaining the rule system.
 Weaponmark enables the storyteller to experiment with rule changes (house rules) and see what the actual effects will be on play balance.
 
@@ -32,7 +32,7 @@ It is also useful to players looking to compare the strengths and weaknesses of 
 Questions such as, *"how much damage would my attack do against an opponent with 3 stamina and 2 armor?"*, or, *"how likely am I to miss or botch if I split my action into three Multi-Actions?"*,
  can all be answered.
 ### Another Example - The Broken Kick Attack
-When I started playing my martial artist character I was dismayed to find a kick was only a +1 to damage dice at a cost of +1 to hit difficulty (Core Rules p.241)
+When I started playing my martial artist character I was dismayed to find a kick was only a +1 to damage dice at a cost of +1 to hit difficulty (Core Rules p.241)...
 I suspected the kick-attack was a loser.
 
 Weaponmark reveals the truth:
@@ -45,7 +45,7 @@ In exchange for being four times more likely to botch and being ineffective 1 in
 There is no reason to ever *Kick* using the core rules, *Strike* instead - you get slightly more damage on average with a lot less risk of botching or missing.
 
 #### Possible Solution - Change the Damage Bonus to +2 or +3
-As a potential fix, you might try this formula when Kicking:
+As a potential fix, you might try this formula when kicking:
 
   - Damage Dice = Strength + 3 *(compared to +1 in rules)*
 
@@ -56,6 +56,7 @@ You will still botch four times as often and be ineffective 1 in 6.7 attempts --
 If you would like the bonus to damage to be less (about +0.3 points) use strength+2 instead.
 For me, an additional ten percent damage in exchange for the increased botching and missing is not compelling but the possibility of a twenty five percent increase makes the Kick a viable option from a risk/reward standpoint.
 Of course each Storyteller should decide what works best for their particular campaign (I seriously doubt my own storyteller would agree to +3 damage).
+
 Weaponmark can help you understand what is going on with an attack, uncover hidden problems like the one above, and make it easy to experiment with alternative solutions.
 
 ## Getting Started
@@ -83,7 +84,7 @@ You will also need to install Java JRE 8 if you do not already have it.
 2. Switch to the program directory:
 > Type: `cd \Program Files\Weaponnmark [Enter]`
 
-3. Run the program, type:
+3. Run the program:
 > Type: `weaponmark [Enter]`
 
 #### Examples
@@ -96,7 +97,7 @@ Type `weaponmark --examples [Enter]` or `weaponmark -e [Enter]` to show some exa
 Type `weaponmark [Enter]' or 'weaponmark --interactive [Enter]` or `weaponmark -i [Enter]` to receive prompts for all needed input:
 
 ![Interactive-mode Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/interactive.png)
-Interactive mode displays what the command line would look like using the input you provided and then runs the benchmark.
+This also displays what the command line would look like had you entered the parameters directly. Study these and you will see how to run benchmarks more quickly.
 
 #### Help
 Type `weaponmark -h [Enter]` or `weaponmark --help [Enter]` to view usage instructions and options:
@@ -121,7 +122,7 @@ Specialties, as described on page 117 of the core rules book, are supported. If 
 
 *core rules p.117*
 ### KiloTurns
-If you are not satisfied with the default 200,000 turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of turns (in thousands) that the benchmark should run.  For example, to run one million turns, include `-t1000` on the command line.
+If you are not satisfied with the default 200,000 turns used to determine benchmark results, you can override this. Use `-t<#>` to specify the number of turns (in thousands) that the benchmark should run.  For example, to run one million turns, include `-t1000` on the command line. Higher values will increase accuracy slightly.
 ### Botching
 The core rules do not provide definitive instructions for handling the consequences of a botch.
 Obviously the player's current action fails but they may also lose one or more additional future actions.

@@ -55,7 +55,7 @@ This seems to yield results with a reasonable upside.
 You will still botch four times as often and be ineffective 1 in 6.7 attempts -- BUT -- you will also average +0.7 to +0.8 more points of damage when your attack is successful.
 If you would like the bonus to damage to be less (about +0.3 points) use strength+2 instead.
 For me, an additional ten percent damage in exchange for the increased botching and missing is not compelling but the possibility of a twenty five percent increase makes the Kick a viable option from a risk/reward standpoint.
-Of course each Storyteller should decide what works best for their particular campaign (I seriously doubt my own storyteller would agree to +3 damage).
+Each Storyteller should decide what works best for their particular campaign (I seriously doubt my own storyteller would agree to +3 damage).
 
 Weaponmark can help you understand what is going on with an attack, uncover hidden problems like the one above, and make it easy to experiment with alternative solutions.
 

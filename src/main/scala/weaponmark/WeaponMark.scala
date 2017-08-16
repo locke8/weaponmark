@@ -29,7 +29,7 @@ object WeaponMark extends App with LazyLogging {
 
   /** open default browser on readme.md page on github */
   private def showAboutInfo(): Unit = {
-    val url = "https://github.com/locke8/weaponmark"
+    val url = "https://github.com/locke8/weaponmark/blob/master/README.md"
     Runtime.getRuntime.exec( "rundll32 url.dll,FileProtocolHandler " + url)
   }
 
@@ -44,7 +44,7 @@ object WeaponMark extends App with LazyLogging {
                |  weaponmark [OPTIONS] weaponName hitDice damageDice [hitDifficulty] [damageDifficulty]
                |
                | Options:""".stripMargin)
-      val about        = opt[Boolean]("about", noshort = true, descr = "explains purpose and usage of weaponmark (opens default web browser)")
+      val about        = opt[Boolean]("about", noshort = true, descr = "opens your default web browser and displays the online readme file")
       val specialty    = opt[Boolean]("specialty", short = 'l', descr = s"any roll of ${Die.dieBase} earns a bonus roll, if that roll is 1 the bonus is negated")//, a bonus roll of 1 negates the bonus")
       val interactive  = opt[Boolean]("interactive", short = 'i', descr = "you will be queried for all needed input")
       val examples     = opt[Boolean]("examples", short = 'e', descr = "show examples of usage with explanations")

@@ -42,21 +42,21 @@ Weaponmark reveals the truth:
 As you can see the basic *Kick* attack is indeed broken:
 
 In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10 for a strike/punch) -- *you do slightly **less** damage per attempt than striking!*
-There is no reason to ever Kick using the core rules, strike instead - same damage with a lot less risk of botching or missing.
+There is no reason to ever "Kick" using the core rules, "Strike" instead - you get slightly more damage on average with a lot less risk of botching or missing.
 
-#### Possible Solution
+#### Possible Solution - Change the Damage Bonus to +2 or +3
 As a potential fix, you might try this formula when Kicking:
 
   - Damage Dice = Strength + 3 *(compared to +1 in rules)*
 
   - Hit Difficulty = 7 *(no change from core rules)*
 
-This seems to yield results with a reasonable upside. You will still botch four times as often
-and be ineffective 1 in 6.7 attempts -- BUT -- you will also average +0.7 to +0.8 more points of damage when you attack is successful.
+This seems to yield results with a reasonable upside.
+You will still botch four times as often and be ineffective 1 in 6.7 attempts -- BUT -- you will also average +0.7 to +0.8 more points of damage when your attack is successful.
 If you would like the bonus to damage to be less (about +0.3 points) use strength+2 instead.
-For me, an additional ten percent damage in exchange for the increased botching and missing is not compelling but the possibility of a twenty five percent increase offers a viable choice from a risk/reward standpoint.
+For me, an additional ten percent damage in exchange for the increased botching and missing is not compelling but the possibility of a twenty five percent increase makes the Kick a viable option from a risk/reward standpoint.
 Of course each Storyteller should decide what works best for their particular campaign (I seriously doubt my own storyteller would agree to +3 damage).
-Weaponmark can help you understand what is going on with an attack, find hidden problems (like the one above), and make it easy to experiment with alternative solutions.
+Weaponmark can help you understand what is going on with an attack, uncover hidden problems like the one above, and make it easy to experiment with alternative solutions.
 
 ## Getting Started
 ### Installation

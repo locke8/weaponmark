@@ -42,7 +42,7 @@ Weaponmark reveals the truth:
 As you can see the basic *Kick* attack is indeed broken:
 
 In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10 for a strike/punch) -- *you do slightly **less** damage per attempt than striking!*
-There is no reason to ever "Kick" using the core rules, "Strike" instead - you get slightly more damage on average with a lot less risk of botching or missing.
+There is no reason to ever *Kick* using the core rules, *Strike* instead - you get slightly more damage on average with a lot less risk of botching or missing.
 
 #### Possible Solution - Change the Damage Bonus to +2 or +3
 As a potential fix, you might try this formula when Kicking:

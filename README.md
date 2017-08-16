@@ -31,31 +31,32 @@ It is also useful to players looking to compare the strengths and weaknesses of 
 
 Questions such as, *"how much damage would my attack do against an opponent with 3 stamina and 2 armor?"*, or, *"how likely am I to miss or botch if I split my action into three Multi-Actions?"*,
  can all be answered.
-### Another Example
-When I started playing my martial artist character I was dismayed to find that a steel-toed "heavy" kick was only a +1 to damage dice at a cost of +1 to hit difficulty.
-I suspected the "heavy kick"-attack was a loser.
+### Another Example - The Broken Kick Attack
+When I started playing my martial artist character I was dismayed to find a kick was only a +1 to damage dice at a cost of +1 to hit difficulty (Core Rules p.241)
+I suspected the kick-attack was a loser.
 
 Weaponmark reveals the truth:
 
-![Broken Heavy Kick Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/kicking.png)
+![Broken Kick Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/kicking.png)
 
-As you can see the "heavy kick" is indeed broken.
-In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10) -- *you do slightly **less** damage per attempt than just a regular kick.*
-Zero upside.
+As you can see the basic *Kick* attack is indeed broken:
+
+In exchange for being four times more likely to botch and being ineffective 1 in every 6 attempts (as opposed to 1 in 10 for a strike/punch) -- *you do slightly **less** damage per attempt than striking!*
+There is no reason to ever Kick using the core rules, strike instead - same damage with a lot less risk of botching or missing.
 
 #### Possible Solution
-As a potential solution you might try this for a "heavy" kick:
+As a potential fix, you might try this formula when Kicking:
 
   - Damage Dice = Strength + 3 *(compared to +1 in rules)*
 
   - Hit Difficulty = 7 *(no change from core rules)*
 
 This seems to yield results with a reasonable upside. You will still botch four times as often
-and be ineffective 1 in 6.7 attempts -- BUT -- you will also average 0.7 to 0.8 more points of damage per successful attack.
-If you would like the bonus to damage to be less (about 0.3 more points) use strength+2 instead.
-For me, ten percent more damage for the additional risks is not very compelling; twenty five percent more damage seems worthwhile from a risk/reward perspective.
-Of course each Storyteller should decide what works best for their particular campaign.
-Weaponmark can help you understand what is going on with an attack, find problems (like the one above), and make it easy to experiment with alternative solutions.
+and be ineffective 1 in 6.7 attempts -- BUT -- you will also average +0.7 to +0.8 more points of damage when you attack is successful.
+If you would like the bonus to damage to be less (about +0.3 points) use strength+2 instead.
+For me, an additional ten percent damage in exchange for the increased botching and missing is not compelling but the possibility of a twenty five percent increase offers a viable choice from a risk/reward standpoint.
+Of course each Storyteller should decide what works best for their particular campaign (I seriously doubt my own storyteller would agree to +3 damage).
+Weaponmark can help you understand what is going on with an attack, find hidden problems (like the one above), and make it easy to experiment with alternative solutions.
 
 ## Getting Started
 ### Installation

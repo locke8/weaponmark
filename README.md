@@ -13,7 +13,7 @@ Here is what that looks like in Weaponmark:
 
 ![Punch Example](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/punch.png)
 
-Since we don't yet know the command line parameters, we type `weaponmark [Enter]` to have the program ask us for them.
+Since we don't yet know the command line parameters, we type `weaponmark [ENTER]` to have the program ask us for them.
 We enter the first three parameters (Weapon Name, Hit Dice, and Damage Dice) and accept the defaults for the rest (by pressing enter repeatedly).
 Next we see the line `= weaponmark Punch 8 4` which shows us how we can run the same command by supplying the needed parameters on the command line, teaching us as we go.
 Lastly, weaponmark prints the details of how the benchmark was run and what the results were.
@@ -79,28 +79,28 @@ You will also need to install Java JRE 8 if you do not already have it.
 
 ### Usage
 1. Start a command prompt:
-> Click on the Start menu and type: ```cmd.exe [Enter]```
+> Click on the Start menu and type: `cmd.exe [ENTER]`
 
 2. Switch to the program directory:
-> Type: `cd \Program Files\Weaponnmark [Enter]`
+> Type: `cd \Program Files\Weaponnmark [ENTER]`
 
 3. Run the program:
-> Type: `weaponmark [Enter]`
+> Type: `weaponmark [ENTER]`
 
 #### Examples
 ##### Usage Examples
-Type `weaponmark --examples [Enter]` or `weaponmark -e [Enter]` to show some examples with explanations:
+Type `weaponmark --examples [ENTER]` or `weaponmark -e [ENTER]` to show some examples with explanations:
 
 ![Examples Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/examples.png)
 
 #### Interactive Mode
-Type `weaponmark [Enter]' or 'weaponmark --interactive [Enter]` or `weaponmark -i [Enter]` to receive prompts for all needed input:
+Type `weaponmark [ENTER]' or 'weaponmark --interactive [ENTER]` or `weaponmark -i [ENTER]` to receive prompts for all needed input:
 
 ![Interactive-mode Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/interactive.png)
 This also displays what the command line would look like had you entered the parameters directly. Study these and you will see how to run benchmarks more quickly.
 
 #### Help
-Type `weaponmark -h [Enter]` or `weaponmark --help [Enter]` to view usage instructions and options:
+Type `weaponmark -h [ENTER]` or `weaponmark --help [ENTER]` to view usage instructions and options:
 
 ![Help Screen](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/help.png)
 
@@ -130,7 +130,7 @@ At the discretion of the Storyteller, the player may lose their next action, or 
 
 In Weaponmark a botch forfeits any and all actions remaining in the current turn.
 ### About
-Typing `weaponmark --about` will open your default browser and display this readme file.
+Typing: `weaponmark --about [ENTER]` will open your default browser and display this readme file.
 ## License
 This project is licensed under the MIT License - see the [LICENSE.txt](https://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.txt) file for details.
 

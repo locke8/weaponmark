@@ -129,6 +129,8 @@ Obviously the player's current action fails but they may also lose one or more a
 At the discretion of the Storyteller, the player may lose their next action, or all actions remaining in the current turn, or that plus the first action of the subsequent turn.
 
 In Weaponmark a botch forfeits any and all actions remaining in the current turn.
+### About `weaponmark --about`
+Will open your default browser and display this readme file.
 ## License
 This project is licensed under the MIT License - see the [LICENSE.txt](https://raw.githubusercontent.com/locke8/weaponmark/master/LICENSE.txt) file for details.
 

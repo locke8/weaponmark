@@ -53,7 +53,7 @@ As a potential fix, you might try this formula when kicking:
 
 This seems to yield results with a reasonable upside.
 You will still botch four times as often and be ineffective 1 in 6.7 attempts -- BUT -- you will also average +0.7 to +0.8 more points of damage when your attack is successful.
-If you would like the bonus to damage to be less (about +0.3 points) use strength+2 instead.
+If you would like the bonus to damage to be less (about +0.3 points) use Strength + 2 instead.
 For me, an additional ten percent damage in exchange for the increased botching and missing is not compelling but the possibility of a twenty five percent increase makes the Kick a viable option from a risk/reward standpoint.
 Each Storyteller should decide what works best for their particular campaign (I seriously doubt my own storyteller would agree to +3 damage).
 
@@ -106,7 +106,7 @@ Type `weaponmark -h [ENTER]` or `weaponmark --help [ENTER]` to view usage instru
 
 ## More Features
 ### Actions
-Use the `-a<#>` parameter to specify the number of actions per turn. The default value is 1. For example, a character with Time Dilation(1) would gain a free action every turn and therefore warrant an `-a2` parameter on the command line.
+Use the `-a<#>` parameter to specify the number of actions per turn. The default value is 1. For example, a character with Distort Time(1) would gain a free action every turn and therefore warrant an `-a2` parameter on the command line.
 
 *core rules p.213-216*
 ### Multiple Actions
@@ -114,7 +114,11 @@ You can specify that the turn include a multi-action with `-m<#>`. A Multi-actio
 
 *core rules p.215, p.239*
 ### Soak Dice
-If you would like to see how your weapon will perform against opponents who can soak damage, use the `-s<#>` parameter. For example, if you want to test your weapon effectiveness against an opponent with three soak dice, include `-s3` on the command line.
+If you would like to see how your weapon will perform against opponents who can soak damage, use the `-s<#>` parameter.
+For example, if you want to test your weapon effectiveness against an opponent with three soak dice, include `-s3` on the command line.
+
+You can also override the standard hit difficulty (6) by using the `soakDifficulty` parameter.
+For example, when playing with "Cinematic Rules" lethal damage can be soaked at a difficulty of 8 so we would add `-d8` or `--soakDifficulty 8` to the command line.
 
 *core rules p.238*
 ### Specialties

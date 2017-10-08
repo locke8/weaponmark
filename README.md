@@ -131,7 +131,7 @@ If you are not satisfied with the default 200,000 turns used to determine benchm
 The core rules do not provide definitive instructions for handling the consequences of a botch.
 Obviously the player's current action fails but they may also lose one or more additional future actions.
 At the discretion of the Storyteller, the player may lose their next action, or all actions remaining in the current turn, or that plus the first action of the subsequent turn.
-The weapon may jam or break, you may hurt a teammate, etc.
+The weapon may jam or break, you may harm another teammate, etc.
 
 In Weaponmark a botch forfeits any and all actions remaining in the current turn.
 ### About

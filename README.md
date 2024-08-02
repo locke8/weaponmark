@@ -1,3 +1,4 @@
+![Weaponmark](https://raw.githubusercontent.com/locke8/weaponmark/master/src/main/resources/screens/weaponmark.jpg)
 
 *How much damage does your weapon dish out?*
 _ _ _

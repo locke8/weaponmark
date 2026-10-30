@@ -26,10 +26,10 @@ case class Example(cp: ColoredPrinter) {
 
     cp.println("""
 
-   2) weaponmark -l Heavy Kick 8 6 7""", Attribute.CLEAR, cmdColor, BColor.BLACK)
+   2) weaponmark -l "Heavy Kick" 8 6 7""", Attribute.CLEAR, cmdColor, BColor.BLACK)
     cp.println("""
 
-      Benchmark a Heavy Kick with 8 hit dice, 7 hit difficulty,
+      Benchmark a "Heavy Kick" with 8 hit dice, 7 hit difficulty,
       6 damage dice & damage difficulty. Wielded as a specialty
       (-l) and running verbose (-v) to show miss-related stats.""", Attribute.CLEAR, descColor, BColor.BLACK)
     cp.println("""
